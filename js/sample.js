@@ -15,8 +15,6 @@
   S.profile.lab = S.profile.lab || "CERIS Research Centre";            // SAMPLE
   S.profile.advisor = S.profile.advisor || "Prof. Name Surname";       // SAMPLE
   S.profile.openTo = S.profile.openTo || "Open to research collaborations"; // SAMPLE
-  S.profile.links.orcid = S.profile.links.orcid || "https://orcid.org/";           // SAMPLE (generic link)
-  S.profile.links.scholar = S.profile.links.scholar || "https://scholar.google.com/"; // SAMPLE (generic link)
 
   S.news = [
     { date: "2027-05", text: "Abstract <strong>accepted</strong> for oral presentation at a transportation research conference (sample)." },

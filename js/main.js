@@ -50,9 +50,10 @@
   $("#heroName").textContent = P.name;
   $("#heroTagline").textContent = P.tagline;
   // One quiet line of plain text (no icons): affiliation · lab · advisor · city
-  $("#heroMeta").textContent = [
+  // each part is its own piece so the dots between them get even spacing, also where the line wraps
+  $("#heroMeta").innerHTML = [
     P.affiliation, P.lab, P.advisor && `Advisor: ${P.advisor}`, P.location
-  ].filter(Boolean).join(" · ");
+  ].filter(Boolean).map((t) => `<span>${esc(t)}</span>`).join("");
   if (P.openTo) {
     const o = $("#heroOpen");
     o.hidden = false;
