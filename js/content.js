@@ -19,7 +19,7 @@ const SITE = {
     advisor: "",                           // e.g. "Prof. Name Surname"
     location: "Lisbon, Portugal",
     tagline: "Making mobility safer and more sustainable through traffic engineering, data, and well-planned infrastructure.",
-    photo: "assets/photo-round.jpg",       // round portrait, background toned green (original: assets/photo.jpg)
+    photo: "",                             // "" shows a placeholder circle. Her photo: "assets/photo-round.jpg"
     cv: "assets/cv.pdf",                   // put her CV in /assets with this name
     email: "laibayaqoob@tecnico.ulisboa.pt",
     openTo: "",                            // e.g. "Open to research collaborations"

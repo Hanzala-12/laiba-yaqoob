@@ -434,3 +434,9 @@ ul, ol, dl, dd { margin: 0; padding: 0; list-style: none; }
 }
 
 @media (max-width: 680px) { .hero.has-photo .hero__portrait { width: 150px; } }
+
+/* Placeholder shown when no photo is set: studio-style slate circle with a soft silhouette */
+.hero__placeholder { width: 100%; height: 100%; display: grid; place-items: end center; overflow: hidden;
+  background: radial-gradient(circle at 50% 38%, #8a96a2 0%, #6b7682 45%, #4f5963 100%); }
+.hero__placeholder i { font-size: 132%; font-size: min(11rem, 82cqw); color: rgba(235,240,244,.55); line-height: .82; transform: translateY(6%); }
+.hero__photo { container-type: inline-size; }

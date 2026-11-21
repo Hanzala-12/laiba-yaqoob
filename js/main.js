@@ -102,6 +102,12 @@
   const photoBox = $("#heroPhoto");
   const portrait = document.querySelector(".hero__portrait");
   if (portrait) portrait.hidden = true;
+  // No photo set: show a neutral placeholder circle (same size and style as the real portrait)
+  if (!P.photo && photoBox && portrait) {
+    photoBox.innerHTML = '<div class="hero__placeholder" role="img" aria-label="Photo coming soon"><i class="fa-solid fa-user" aria-hidden="true"></i></div>';
+    portrait.hidden = false;
+    document.querySelector(".hero").classList.add("has-photo");
+  }
   if (P.photo && photoBox && portrait) {
     const img = new Image();
     img.alt = `Portrait of ${P.name}`;
