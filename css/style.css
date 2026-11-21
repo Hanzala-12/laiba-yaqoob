@@ -107,8 +107,8 @@ ul, ol, dl, dd { margin: 0; padding: 0; list-style: none; }
 /* The hero is a deep-green band (same as the contact band) with white text and gold details */
 .hero { background: var(--band); color: var(--on-green); padding-top: clamp(48px, 7vw, 96px); padding-bottom: clamp(56px, 8vw, 104px); border-bottom: 3px solid var(--gold); }
 .hero.has-photo .hero__photo { aspect-ratio: 1; border-radius: 50%;
-  box-shadow: 0 0 0 5px rgba(6,40,27,.55), 0 0 0 6px var(--gold-soft), 0 18px 40px rgba(0,0,0,.35); }
-.hero.has-photo .hero__portrait { width: min(100%, 280px); }
+  box-shadow: 0 10px 30px rgba(0,0,0,.3); }   /* plain circle, no ring (studio-portrait style) */
+.hero.has-photo .hero__portrait { width: min(100%, 260px); }
 /* Background: the 25 de Abril bridge in Lisbon, mirrored so it sits on the left behind the text and her photo has calm sky behind it, toned to the site green (assets/hero-bridge.jpg,
    photo by Mo on Unsplash, Unsplash License). The gradient keeps the text side calm and readable. */
 .hero {
@@ -432,3 +432,5 @@ ul, ol, dl, dd { margin: 0; padding: 0; list-style: none; }
   .section { padding-block: 18px; }
   .section--tint { background: #fff; }
 }
+
+@media (max-width: 680px) { .hero.has-photo .hero__portrait { width: 150px; } }
